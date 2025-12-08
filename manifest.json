@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Telegram Calm",
+  "version": "0.1",
+  "description": "Removes all social analytics stats",
+  "content_scripts":[
+    {
+      "matches": ["https://web.telegram.org/*"],
+      "js": ["content.js"],
+      "run_at":"document_idle"
+    }
+
+  ]
+
+}
